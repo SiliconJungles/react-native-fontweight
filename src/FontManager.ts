@@ -113,7 +113,8 @@ class FontManager {
 				const fontWeight: FontWeight = origin.props.style.fontWeight ? origin.props.style.fontWeight : '400'
 
 				const fontStyle: FontStyle = origin.props.style.fontStyle ? origin.props.style.fontStyle : 'normal'
-				origin.props.style.fontStyle = 'normal'
+				// HACK: Disabled mutation of fontStyle as is immutable in some libaries
+				// origin.props.style.fontStyle = 'normal'
 
 				const fontFamily: string = origin.props.style.fontFamily ? origin.props.style.fontFamily : 'Roboto'
 

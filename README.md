@@ -8,31 +8,29 @@ Install it using the following guide: https://medium.com/react-native-training/r
 
 Insert the following code into the starting point of the application (usually App.js) 
 
-    useEffect(() => {
-        FontManager.init();
-    }, []);
-
+```js
+useEffect(() => {
+	FontManager.init();
+}, []);
+```
 # Usage
 
 Use it like you would use fontFamily & fontWeight for iOS (defaults to Roboto on Android)
 
-    <Text
-      style={{
-        fontWeight: '300'
-      }}>
-      Some Text
-    </Text>
-    
+```jsx
+<Text style={{ fontWeight: '300' }}>
+	Some Text
+</Text>
+```
+
 Custom fonts:
 
-    <Text
-      style={{
-        fontFamily: 'OpenSans',
-        fontWeight: '300'
-      }}>
-      Some Text
-    </Text>
-    
+```jsx
+<Text style={{ fontFamily: 'OpenSans', fontWeight: '300' }}>
+	Some Text
+</Text>
+```
+
 # Notes
 
 - Tested on react: 16.1.8, react-native: 0.60.5
