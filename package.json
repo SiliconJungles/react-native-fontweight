@@ -1,6 +1,6 @@
 {
-  "name": "react-native-fontweight",
-  "version": "0.1.0-alpha",
+  "name": "react-native-font-weight",
+  "version": "0.1.2-alpha",
   "description": "Enables Font Weight attribute for ReactNative Android",
   "author": "aelesia",
   "license": "MIT",
@@ -10,7 +10,7 @@
   "scripts": {
     "prepublish": "tsc"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.0.0",
     "react-native": "^0.60.0"
   },
