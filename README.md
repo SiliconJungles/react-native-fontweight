@@ -4,11 +4,21 @@ Download Roboto font: https://fonts.google.com/?selection.family=Roboto
 
 Install it using the following guide: https://medium.com/react-native-training/react-native-custom-fonts-ccc9aacf9e5e
 
+# Installing package
+
+Yarn: `yarn add react-native-font-weight`
+
+NPM: `npm install react-native-font-weight`
+
+
+
 # Initializing Font Manager
 
 Insert the following code into the starting point of the application (usually App.js) 
 
 ```js
+import FontManager from 'react-native-font-weight';
+
 useEffect(() => {
 	FontManager.init();
 }, []);
